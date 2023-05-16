@@ -1,0 +1,121 @@
+@tailwind base;
+@tailwind components;
+
+.theme-first {
+    /* background */
+  --main-bg: hsl(222, 26%, 31%);
+  --toggle-bg: hsl(223, 31%, 20%);
+  --keypad-bg: hsl(223, 31%, 20%);
+  --screen-bg: hsl(224, 36%, 15%);
+
+  /* keys */
+  --key-bg: hsl(30, 25%, 89%);
+  --key-shadow: hsl(28, 16%, 65%);
+  --del-key:hsl(225, 21%, 49%);
+  --del-shadow: hsl(224, 28%, 35%);
+  --reset-key: hsl(225, 21%, 49%);
+  --reset-shadow: hsl(224, 28%, 35%);
+  --toggle-circle: hsl(6, 63%, 50%);
+  --equal-key: hsl(6, 63%, 50%);
+  --equal-shadow: hsl(6, 70%, 34%);
+  
+
+
+  /* text */
+  --number-text: hsl(221, 14%, 31%);
+  --text-dark:hsl(0, 0%, 100%);
+  --text-light: hsl(0, 0%, 100%);
+  --screen-text: hsl(0, 0%, 100%);
+  
+
+}
+.theme-second {
+   /* background */
+   --main-bg: hsl(0, 0%, 90%);
+   --toggle-bg: hsl(0, 5%, 81%);
+   --keypad-bg: hsl(0, 5%, 81%);
+   --screen-bg: hsl(0, 0%, 93%);
+ 
+   /* keys */
+   --key-bg: hsl(45, 7%, 89%);
+   --key-shadow: hsl(35, 11%, 61%);
+   --del-key:hsl(185, 42%, 37%);
+   --del-shadow: hsl(185, 58%, 25%);
+   --reset-key: hsl(185, 42%, 37%);
+   --reset-shadow: hsl(185, 58%, 25%);
+   --toggle-circle: hsl(25, 98%, 40%);
+   --equal-key: hsl(25, 98%, 40%);
+   --equal-shadow: hsl(25, 99%, 27%);
+   --screen-text: hsl(0, 0%, 100%);
+ 
+   /* text */
+   --number-text: hsl(60, 10%, 19%);
+   --text-dark:hsl(60, 10%, 19%);
+   --text-light:hsl(0, 0%, 100%);
+   --screen-text: hsl(60, 10%, 19%);
+}
+.theme-third {
+
+   /* background */
+   --main-bg: hsl(268, 75%, 9%);
+   --toggle-bg: hsl(268, 71%, 12%);
+   --keypad-bg: hsl(268, 71%, 12%);
+   --screen-bg: hsl(268, 71%, 12%);
+ 
+   /* keys */
+   --key-bg: hsl(268, 47%, 21%);
+   --key-shadow: hsl(290, 70%, 36%);
+   --del-key:hsl(281, 89%, 26%);
+   --del-shadow: hsl(285, 91%, 52%);
+   --reset-key: hsl(281, 89%, 26%);
+   --reset-shadow: hsl(285, 91%, 52%);
+   --toggle-circle: hsl(176, 100%, 44%);
+   --equal-key: hsl(176, 100%, 44%);
+   --equal-shadow: hsl(177, 92%, 70%);
+
+ 
+   /* text */ 
+   --number-text:hsl(52, 100%, 62%);
+   --screen-text: hsl(52, 100%, 62%);
+   --text-dark:hsl(52, 100%, 62%);
+   --text-light:hsl(0, 0%, 100%);
+   --text-blue: hsl(198, 20%, 13%);
+}
+
+
+/* Theme switch styles */
+button {
+   background-color: var(--key-bg);
+   border-radius: 0.5rem;
+   color: var(--number-text);
+   box-shadow: 0 3px 0 var(--key-shadow);
+   /* animation: buttonPress 0.3s ease-in 1s 1 normal forwards; */
+}
+.themeBtns {
+   display: flex;
+   justify-content: center;
+   border: none;
+   background-color: var(--toggle-bg);
+   border-radius: 50px;
+   padding-block: 0.2rem;
+   padding-inline: 0.3rem;
+}
+.themeBtns input {
+    height: 13px;
+    width: 13px;
+    appearance: none;
+    background-color: var(--toggle-circle);
+    border-radius: 50%;
+    opacity: 0;
+}
+.themeBtns input:hover {
+   cursor: pointer;
+}
+.themeBtns #one {
+   opacity: 1;
+}
+button:active {
+   box-shadow: none;
+   transform: translateY(3px);
+}
+@tailwind utilities;
