@@ -28,7 +28,7 @@ Users should be able to:
 
 ### Screenshot
 
-![](./calculator%20app.jpg)
+![](./calculator-app.jpg)
 
 
 
