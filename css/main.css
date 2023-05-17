@@ -713,8 +713,16 @@ button:active {
   height: 5rem;
 }
 
+.min-h-screen {
+  min-height: 100vh;
+}
+
 .w-\[90\%\] {
   width: 90%;
+}
+
+.w-screen {
+  width: 100vw;
 }
 
 .grid-cols-4 {
@@ -727,6 +735,10 @@ button:active {
 
 .flex-col {
   flex-direction: column;
+}
+
+.place-items-center {
+  place-items: center;
 }
 
 .items-center {
